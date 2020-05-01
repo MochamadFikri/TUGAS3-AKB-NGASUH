@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="#3498BD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="8dp">
+
+        <!--    Header    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight=".5">
+            <ImageView
+                android:id="@+id/iv_login_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_child_friendly">
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NGASUH"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                android:textColor="#f3f3f3"
+                android:layout_marginTop="8dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Siap Menjadi Orangtua Muda"
+                android:textSize="16sp"
+                android:textColor="#f3f3f3"
+                android:layout_marginTop="8dp">
+            </TextView>
+        </LinearLayout>
+        <!--    End Header    -->
+
+        <!--    Body    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_register_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daftar"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#f3f3f3"
+                android:layout_gravity="center">
+            </TextView>
+
+            <EditText
+                android:id="@+id/register_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:textColorHint="#f3f3f3"
+                android:textColor="#f3f3f3"
+                android:backgroundTint="#f3f3f3"
+                android:layout_marginTop="16dp">
+            </EditText>
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#f3f3f3"
+                android:textColorHint="#f3f3f3"
+                android:backgroundTint="#f3f3f3"
+                android:layout_marginTop="16dp">
+            </EditText>
+            <EditText
+                android:id="@+id/register_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:textColorHint="#f3f3f3"
+                android:textColor="#f3f3f3"
+                android:backgroundTint="#f3f3f3"
+                android:layout_marginTop="16dp">
+            </EditText>
+
+        </LinearLayout>
+        <!--    End Body    -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:gravity="center|bottom"
+            android:paddingBottom="24dp">
+            <Button
+                android:id="@+id/register_btn"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_btn_daftar"
+                android:text="Masuk"
+                android:textColor="#f3f3f3"
+                android:textAllCaps="false">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
